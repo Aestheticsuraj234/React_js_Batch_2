@@ -56,3 +56,9 @@
    - Events in JavaScript allow developers to create dynamic and interactive web applications by responding to user actions and system events.
    - By understanding event types, handling techniques, event objects, mouse and keyboard events, event flow, and common methods, developers can effectively implement event-driven programming in JavaScript to enhance user experience and functionality.
    
+
+
+
+   https://www.freecodecamp.org/news/event-bubbling-in-javascript/
+
+   https://www.freecodecamp.org/news/event-bubbling-and-event-capturing-in-javascript/
