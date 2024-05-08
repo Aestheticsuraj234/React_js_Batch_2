@@ -45,7 +45,7 @@
 // // function AddNumbers(...numbers)
 // // {
     
-// //     return numbers.reduce((sum, number) => sum + number, 0);
+//     return numbers.reduce((sum, number) => sum + number, 0);
 
 // // }
 
