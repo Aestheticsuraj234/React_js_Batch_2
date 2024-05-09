@@ -41,4 +41,21 @@
 // localStorage.setItem("userdata",JSON.stringify(UserData) )
 
 
-localStorage.removeItem("Score")
+// localStorage.removeItem("Score")
+
+
+// Session Storage
+
+// localStorage.setItem("Score" , 1000)
+// sessionStorage.setItem("Score1" , 1000)
+// sessionStorage.setItem("Score2" , 2000)
+// sessionStorage.setItem("Score3" , 3000)
+// sessionStorage.setItem("Score4" , 4000)
+// let data = sessionStorage.getItem("Score")
+// console.log(data)
+
+
+
+// sessionStorage.removeItem("Score")
+
+sessionStorage.clear()

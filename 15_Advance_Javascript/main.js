@@ -26,7 +26,7 @@
 
 
 
-// // **Rest and Spread Operators** (...)
+// **Rest and Spread Operators** (...)
 
 // // !Rest Operator
 
@@ -82,6 +82,16 @@ foodItems[5][0] = "🍟"
 console.log(foodItems[5][0])
 console.log(FruitsEmojis[5][0])
 
+
+let obj1 = {x:12 , y:13 ,OBJ:{
+    a:1,
+    b:2
+}}
+let obj2 = {z:14 , a:15}
+
+let obj3 = {...obj1  , ...obj2}
+
+console.log(obj3)
 
 
 
