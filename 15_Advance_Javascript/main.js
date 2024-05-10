@@ -70,12 +70,14 @@
 
 // *1 Spread Operator in Array
 
-let FruitsEmojis = ['🍎', '🍌', '🥭', '🍊', '🍇' , ["🍔"]  ]
+let FruitsEmojis = ['🍎', '🍌', '🥭', '🍊', '🍇' ,["🍐"]]
+
+
 
 
 let VegetablesEmojis=['🥦', '🥕', '🥒', '🌽', '🥬']
 
-let foodItems = [...FruitsEmojis , ...VegetablesEmojis]
+let foodItems = [FruitsEmojis]
 
 foodItems[5][0] = "🍟"
 
