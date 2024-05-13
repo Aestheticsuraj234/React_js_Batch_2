@@ -1,0 +1,74 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color: #efefef;
+    background: url();
+    font-family: 'DM Serif Display', serif;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+h1 {
+    color: #240045;
+    font-family: 'Unbounded', cursive;
+    margin: auto;
+    transition: 0.25s;
+}
+
+h1:hover {
+    color: #FF9E00;
+}
+
+.fa-drum {
+    transform: scale(1.15);
+    margin: auto 0.5rem;
+}
+
+#drumkit {
+    margin: 1.5rem auto;
+    color: #240045;
+    text-align: center;
+}
+
+h2 {
+    margin: auto;
+}
+
+a,
+a:visited {
+    color: #240045;
+}
+
+i {
+    font-weight: bold;
+}
+
+.element {
+    font-family: 'DM Serif Display', serif;
+    display: inline-grid;
+    place-content: center;
+    border-radius: 0.5rem;
+    width: 10vmax;
+    height: 10vmax;
+    padding: 1.5vmax 2.5vmax;
+    margin: 1.5vmax;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: 15px 15px 25px #e0e0e0, -15px -15px 25px #efefef;
+}
+
+.active {
+    background-color: #FF9E00;
+    transform: scale(1.05);
+    transition: 0.15s;
+}
+
+.footnote {
+    margin: 0.5rem auto;
+}
