@@ -1,14 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import reactDom from "react-dom/client";
 import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const reactElement = React.createElement(
+//   'div', 
+//   null, 
+//   React.createElement(
+//     'h1', 
+//     { className: '' }, 
+//     'I Love JSX!'
+//   ),
+//   React.createElement(
+//     'p', 
+//     null, 
+//     "It's so easy to use!"
+//   )
+// );
+
+// const myElement = React.createElement("h1" , null , "I Love JSX!")
+
+const root = reactDom.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <App/>
+  </div>
 );
-
-
