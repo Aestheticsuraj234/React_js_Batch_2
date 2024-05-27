@@ -7,3 +7,6 @@ step-5 npx create-react-app my-app
 
 ES7+ React/Redux/React-Native snippets
 author = dsznajder
+
+
+<!-- https://tailwindcss.com/docs/guides/create-react-app -->

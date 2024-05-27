@@ -2,6 +2,8 @@ import React from 'react';
 import reactDom from "react-dom/client";
 import App from './App';
 
+import "./index.css"
+
 
 // const reactElement = React.createElement(
 //   'div', 
@@ -23,7 +25,7 @@ import App from './App';
 const root = reactDom.createRoot(document.getElementById('root'));
 
 root.render(
-  <div>
-    <App/>
-  </div>
+  <>
+   <App/>
+  </>
 );
