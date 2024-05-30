@@ -1,5 +1,7 @@
 import React from 'react'
 import Leftsidebar from './components/Leftsidebar'
+import Feed from './components/Feed'
+import RightSidebar from './components/RightSidebar'
 
 const App = () => {
   return (
@@ -7,7 +9,13 @@ const App = () => {
 
         <div className='w-full md:flex'>
             <Leftsidebar/>
-            hello
+
+<div className="max-w-[42rem] w-full">
+    <Feed/>
+</div>
+
+<RightSidebar/>
+
         </div>
 
     </main>

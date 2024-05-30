@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoHomeSharp } from "react-icons/io5";
+import { IoHomeSharp, IoLogOut } from "react-icons/io5";
 import { LEFT_SIDEBAR_LINKS } from '../constants/left-sidebar-links';
 
 const Leftsidebar = () => {
@@ -42,6 +42,10 @@ const Leftsidebar = () => {
 
 
                 {/* buttons */}
+                <button className='flex flex-row justify-center items-center gap-2 bg-white text-red-500 px-4 py-2.5 rounded-md'>
+                        <IoLogOut size={24}/>
+                        <span className='text-lg font-bold'>Logout</span>
+                </button>
 
             </div>
 
