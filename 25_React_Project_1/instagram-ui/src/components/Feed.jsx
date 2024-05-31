@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Stories from './Stories';
+import Posts from './Posts';
 
 const Feed = () => {
   return (
-    <section className="mx-4 w-full">
-        <main className="flex flex-col items-center gap-10 mx-4 my-2 ">
-      Feed
-        </main>
-    </section>
-  )
-}
+    <section className='mx-4'>
+      <main className="flex flex-col items-center gap-10 mx-4 my-2 overflow-x-scroll">
+        <Stories />
+      </main>
+      <Posts />
 
-export default Feed
+    </section>
+
+  );
+};
+
+export default Feed;
