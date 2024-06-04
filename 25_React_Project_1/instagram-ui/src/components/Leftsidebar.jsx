@@ -1,8 +1,10 @@
 import React from 'react'
 import { IoHomeSharp, IoLogOut } from "react-icons/io5";
 import { LEFT_SIDEBAR_LINKS } from '../constants/left-sidebar-links';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Leftsidebar = () => {
+    const {pathname} = useLocation()
     return (
         <nav className="hidden md:flex bg-black px-4 py-10 flex-col justify-between border-r min-w-[16rem]">
 
@@ -23,17 +25,19 @@ const Leftsidebar = () => {
                 <ul className='flex flex-col gap-5'>
 
                     {
-                        LEFT_SIDEBAR_LINKS.map((item)=>(
+                        LEFT_SIDEBAR_LINKS.map((item) => {
 
-                            <li key={item.id} className='rounded-lg text-[1rem] font-medium leading-[140%] hover:bg-[#1c1e21] transition text-white '>
+                            let isActive = pathname === item.href;
+                            
+                            return(<li key={item.id} className={`rounded-lg text-[1rem] font-medium leading-[140%] hover:bg-[#1c1e21] transition text-white ${isActive ? "bg-[#1c1e21]" :""} `}>
+                                <NavLink to={item.href} className='flex items-center gap-4 px-4 py-2'>
 
-                            <div className='flex items-center gap-4 px-4 py-2'>
-                               {item.icon}
-                                <span className="text-lg">{item.title}</span>
-                            </div>
-    
-                        </li>
-                        ))
+                                    {item.icon}
+                                    <span className="text-lg">{item.title}</span>
+
+                                </NavLink>
+                            </li>)
+                        })
 
 
                     }
@@ -43,8 +47,8 @@ const Leftsidebar = () => {
 
                 {/* buttons */}
                 <button className='flex flex-row justify-center items-center gap-2 bg-white text-red-500 px-4 py-2.5 rounded-md'>
-                        <IoLogOut size={24}/>
-                        <span className='text-lg font-bold'>Logout</span>
+                    <IoLogOut size={24} />
+                    <span className='text-lg font-bold'>Logout</span>
                 </button>
 
             </div>

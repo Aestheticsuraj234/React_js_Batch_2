@@ -1,6 +1,13 @@
-import React from 'react'
+import React , {useContext} from 'react'
+import { GlobalContext } from '../context/GlobalContext'
 
 const Story = ({avatar , username , isWatched}) => {
+
+  const {UserName} = useContext(GlobalContext)
+
+  console.log(UserName)
+
+  
   return (
     <div className='flex flex-col items-center justify-center gap-2 cursor-pointer'>
 
@@ -14,7 +21,8 @@ const Story = ({avatar , username , isWatched}) => {
 
         <p className="text-xs w-14 truncate text-white text-center">{username}</p>
 
-    </div>
+
+    </div>  
   )
 }
 
